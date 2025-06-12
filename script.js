@@ -18,7 +18,7 @@
         el.innerHTML += texto.charAt(i);
         i++;
         if (i > texto.length) clearInterval(intervalo);
-      }, 10);
+      }, 5);
     }
 
 const atos = [
