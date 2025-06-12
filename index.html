@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Inverno Dourado</title>
+    
+</head>
+<body onload="telaInicial(0)">
+
+  <audio id="musica" src="audio/musica.mp3" autoplay loop></audio>
+ 
+    <div class="tela-inicial" id="telaInicial">
+    <h1>Nasce Uma Estação</h1>
+      <img src="img/ato0.jpg" alt="Imagem da tela inicial" class="inicio-imagem" id="inicioImagem">
+    <button class="btn-comecar" onclick="mostrarAto(0)">Começar</button>
+  </div>
+
+  <div class="nav-icones" id="menuLateral">
+     <button class="menu-toggle" id="puxador" onclick="alternarMenu()">☰</button>
+     <button onclick="voltarInicio()">🏠 Início</button>
+     <button onclick="alert('A principal fonte de inspiração para criar essa história foram as músicas, que me permitiram expandir minha criatividade e desenvolver a trama. Além disso, observar e refletir sobre o ambiente ao meu redor também foi fundamental, pois me ajudou a capturar elementos e transformá-los em algo mais profundo. No entanto, o mais importante é que estou vivendo essa história, e é essa conexão pessoal que a torna tão especial e essencial para mim enquanto a escrevo e tento transmitir para você.')">💡 Inspirações</button>
+     <button onclick="alert('Me chamo Haco, sou uma raposa vermelha. E agora, após essa jornada, venho contar como passei por ela. Entretanto, ainda estou nesse inverno, mas já sinto o calor de um verão. E você, Rei das Sombras? Como você está?')">🦊 Sobre o Criador</button>
+     <button onclick="alternarModoEscuro()">🌙 Modo Escuro</button>
+  </div>
+
+  <main class="ato-container" id="ato">
+
+    <div class="ato-nome" id="atoNome">Ato 1: O Chamado</div>
+    <div class="navegacao-atos">
+        <div class="imagem-e-setas">
+            <button class="navegacao-botao" onclick="mudarAto(-1)">⬅</button>
+            <img src="img/ato1.jpg" class="ato-imagem" id="atoImagem">
+            <button class="navegacao-botao" onclick="mudarAto(1)">➡</button>
+        </div>
+    </div>
+
+    <div class="dialogo" id="dialogo">
+      Elara sente que algo está diferente em seu vilarejo. Um presságio paira no ar...
+    </div>
+  </main>
+
+</body>
+</html>
